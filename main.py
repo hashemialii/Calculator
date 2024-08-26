@@ -39,8 +39,8 @@ class Calculator:
             result = self.parse_input(user_input)
             print(f"The result is: {result}")
 
-            next_calculation = input("Do you want to perform another calculation? (yes/no): ").lower()
-            if next_calculation not in ['yes', 'y']:
+            quit_calculater = [i.lower() for i in user_input.split()]
+            if 'quit' in quit_calculater or 'q' in quit_calculater:
                 break
 
         print("Thank you for using the Python Calculator! Goodbye.")

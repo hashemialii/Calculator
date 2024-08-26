@@ -1,26 +1,25 @@
 class Calculator:
 
     @staticmethod
-    def add(self, x, y):
+    def add(x, y):
         return x + y
 
     @staticmethod
-    def subtract(self, x, y):
+    def subtract(x, y):
         return x - y
 
     @staticmethod
-    def multiply(self, x, y):
+    def multiply(x, y):
         return x * y
 
     @staticmethod
-    def divide(self, x, y):
+    def divide(x, y):
         if y == 0:
             return "Error! Division by zero."
         else:
             return x / y
 
     def parse_input(self, user_input):
-
         operators = {'+': self.add, '-': self.subtract, '*': self.multiply, '/': self.divide}
         for op in operators:
             if op in user_input:
@@ -48,7 +47,5 @@ class Calculator:
 
 
 if __name__ == "__main__":
-
     calc = Calculator()
     calc.run()
-

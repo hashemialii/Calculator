@@ -43,6 +43,10 @@ class Calculator:
             if 'quit' in quit_calculater or 'q' in quit_calculater:
                 break
 
+            # next_calculation = input("Do you want to perform another calculation? (yes/no): ").lower()
+            # if next_calculation not in ['yes', 'y']:
+            #     break
+
         print("Thank you for using the Python Calculator! Goodbye.")
 
 
